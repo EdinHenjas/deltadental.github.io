@@ -1,0 +1,754 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+@keyframes animacija {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slajd {
+    from {
+        transform: translateX(-100%);
+
+    }
+
+    to {
+        transform: translateX(0);
+
+    }
+}
+
+h1 {
+    animation: slajd 1s;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,textarea {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+
+
+}
+
+:root {
+    --boja: #1f7b68;
+}
+
+/* ----------Header sekcija------------- */
+.logo {
+    margin-left: 3vw;
+    animation: animacija 1s;
+
+}
+
+.banner-text {
+    width: 100%;
+    padding: 37vh;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;
+}
+
+.banner-text h1 {
+
+
+    font-size: 50px;
+
+}
+
+.span {
+    color: rgb(223, 126, 16);
+}
+
+#banner {
+    background-image: url("../img/back1.jpg");
+    overflow: hidden;
+    height: 70vh;
+    background-size: cover;
+    background-color: var(--boja);
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    height: 7vh;
+    background: var(--boja);
+    position: sticky !important;
+    z-index: 100;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 1.5vw 1.5vh;
+    border-left: 2px solid var(--boja);
+
+    padding-left: 1.5vw;
+
+}
+
+nav ul {
+
+    display: flex;
+    word-wrap: nowrap;
+    justify-content: space-around;
+    margin-right: 3vw;
+
+}
+
+#li1 {
+    border: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+
+}
+
+#nav2 {
+    border-top: 1px solid rgb(0, 0, 0);
+    align-items: center;
+    justify-content: space-between;
+    top: 7vh;
+}
+
+/* -----------heder kraj-------------- */
+/* -----------Main sekcija------------ */
+.main-section-block:hover {
+    background-color: rgb(18, 100, 84, 0.7);
+    transform: scale(1.05);
+}
+
+.main-section-block:hover p,
+.main-section-block:hover ul {
+    opacity: 1;
+    margin: 2% 0;
+
+}
+
+.main-section-block h3 {
+    color: rgb(0, 0, 0);
+    margin: 10% 3vw;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-family: 'Oswald', sans-serif;
+    transition: all ease-in-out 150ms;
+
+}
+
+main {
+    margin: 0 auto;
+    padding: 5vh 0;
+    width: 94%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+main section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#main-section {
+    width: 80%;
+    display: grid;
+    gap: 2%;
+    grid-template-columns: 32% 32% 32%;
+    margin: 5vh 0;
+
+}
+
+.main-section-block i {
+    margin: 0 auto;
+    transition: all ease-in-out 150ms;
+    vertical-align: bottom;
+    z-index: 2;
+}
+
+.main-section-block:hover i {
+    opacity: 0;
+}
+
+.main-section-block {
+
+    /* height: 40vh; */
+    text-align: center;
+    /* min-height: 41vh; */
+    height: 45vh;
+    /* max-height:max-content; */
+
+    background-color: rgb(18, 100, 84, 0.23);
+    transition: all ease-in-out 150ms;
+
+
+}
+
+.main-section-block p,
+.main-section-block ul {
+    opacity: 0;
+    transition: all ease-in-out 150ms;
+    list-style: none;
+}
+
+.main-red {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    margin: 10vh 0;
+    animation-name: animacija;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+
+}
+
+.sekcije ul li {
+    list-style-type: none;
+}
+
+.sekcije ul li::before {
+
+    content: "\2022";
+    color: var(--boja);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.main-red h2 {
+    margin: 20px 0;
+    color: rgb(223, 126, 16);
+}
+
+.main-red p {
+    margin: 10px 0;
+}
+
+.mc-blok p,
+.mc-blok ul {
+    font-size: larger;
+}
+
+#main-section a {
+    text-decoration: none;
+}
+
+.main-section-block:hover {
+    box-shadow: 0px 0px 15px 12px rgb(31, 123, 104, 0.15);
+}
+
+.main-section-block p,
+.main-section-block ul {
+    color: rgb(255, 255, 255);
+}
+
+.main-section-block {
+    position: relative;
+}
+
+.mc-blok img {
+    width: 35vw;
+}
+
+.mc-blok {
+    width: 35vw;
+}
+
+#main-centar h2 {
+    text-align: center;
+    margin: 35px;
+    font-size: 30px;
+}
+
+#main-centar span {
+    color: rgb(223, 126, 16);
+}
+
+#main-centar ul {
+    list-style-type: none;
+    margin-top: 30px;
+
+}
+
+/* .cent-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} */
+#main-centar ul li::before {
+
+    content: "\2022";
+    color: var(--boja);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#blok1::before {
+    content: '';
+    background: url("../img/protetika.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#blok2::before {
+    content: '';
+    background: url("../img/endo.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#blok3::before {
+    content: '';
+    background: url("../img/hirurg.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#blok4::before {
+    content: '';
+    background: url("../img/fiksna.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#blok5::before {
+    content: '';
+    background: url("../img/decija.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#blok6::before {
+    content: '';
+    background: url("../img/para.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#main-centar {
+    width: 75%;
+    margin: 30px auto;
+    text-align: justify;
+}
+
+/*--------Kraj maina-------------*/
+#onamaSlika img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 38vw;
+
+}
+
+/* ---------futer--------------- */
+footer {
+
+    background-color: var(--boja);
+}
+
+.wrp {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.okvir {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 2%;
+
+}
+
+.okvir h3,
+#footer-contact h3 {
+    color: rgb(255, 255, 255);
+    padding: 2vh 0;
+}
+
+.okvir ul li {
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 1vh;
+
+}
+
+.okvir ul {
+    padding-bottom: 2vh;
+}
+
+.okvir ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.footer-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a {
+    color: rgb(0, 0, 0);
+}
+
+footer a:hover {
+    color: rgb(223, 126, 16);
+}
+
+/* .donji{
+    display: flex;
+
+    align-items: baseline;
+    justify-content: space-around;
+} */
+
+
+.okvir a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+hr {
+    width: 90%;
+    margin: 5vh auto;
+
+    size: 10px;
+
+    color: rgb(255, 255, 255);
+}
+
+.footer-bot {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#zakazi {
+    text-decoration: none;
+    color: rgb(223, 126, 16);
+    padding: 3%;
+    font-size: larger;
+    font-weight: bolder;
+    border: 2px solid rgb(223, 126, 16);
+    transition: all ease-in-out 150ms;
+    justify-content: flex-end;
+}
+
+#okvird {
+    align-items: center;
+}
+
+#zakazi:hover {
+    background-color: rgb(223, 126, 16);
+    ;
+    color: rgb(255, 255, 255);
+}
+
+
+body {
+    background-color: rgb(231, 237, 242);
+}
+
+.flex p {
+    margin-left: 1rem;
+}
+
+.flex i {
+    color: rgb(223, 126, 16);
+}
+
+
+
+.cent-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* ------------Usluge------------------ */
+.content {
+    width: 75%;
+    /* max-width: 900px; */
+    margin: 0 auto;
+
+}
+
+
+.content section {
+    display: grid;
+    grid: auto / 200px 1fr;
+    grid-gap: 0 2em;
+    margin: 35px 0;
+
+
+
+}
+
+.content section p,
+.content section ul,
+.content section h3 {
+
+    grid-column: 2 / 3;
+    margin: 10px;
+    text-align: justify;
+    font-size: larger;
+
+}
+
+.section-naslov {
+    grid-column: 1 / 2;
+    text-align: right;
+    align-self: start;
+    top: 5em;
+    position: sticky;
+    color: rgb(223, 126, 16);
+    font-size: xx-large;
+
+}
+
+.content h3 {
+    color: var(--boja);
+    font-size: larger;
+}
+
+/* ---------------usluge kraj-------------- */
+
+/* .drugi-main
+{
+
+    width: 100%;
+    align-items: flex-start;
+} */
+/* ----------------autor----------------------- */
+.autor {
+    display: flex;
+
+}
+
+.autor-slika {
+
+    width: 40vw;
+    height: 70vh;
+
+}
+
+.autor-kontent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw;
+    height: 70vh;
+    margin: 5vw;
+    
+
+}
+
+.autor-lista {
+    
+    color: var(--boja);
+    font-weight: bold;
+
+}
+
+.autor-kontent li {
+    font-size: 25px;
+    margin-bottom: 25px;
+    border-bottom: 2px dotted;
+    list-style: none;
+}
+
+#autor1 {
+    background-image: url("../img/autor.jpg");
+    background-size: cover;
+
+
+}
+/*----------- kontakt stranica------------ */
+.kontakt-forma{
+    width: 80%;
+    margin:5vw auto;
+}
+.kontakt-forma h2,.kontakt-forma p{
+    margin-bottom: 20px;
+}
+.kontakt-forma h3{
+    margin-bottom: 20px;
+    color: var(--boja);
+    font-weight:bolder;
+}
+.kontakt-container{
+    display: flex;
+}
+#kontakt-levo{
+    flex-basis: 60%;
+    padding: 40px 50px;
+    background-color: #fff;
+
+
+}
+#kontakt-desno{
+    flex-basis: 40%;
+    padding: 40px;
+    background-color: var(--boja);
+    color: rgb(255,255,255);
+}
+.input-red{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.input-red .input-grupa{
+    flex-basis: 45%;
+}
+input,select{
+    width: 100%;
+    border:none;
+    border-bottom: 2px solid var(--boja);
+    background-color: inherit;
+    outline: none;
+    padding-bottom: 10px;
+}
+textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--boja);
+    outline: none;
+    padding: 10px 0;
+    color: var(--boja);
+
+}
+label{
+    display: block;
+    margin-top: 8px;
+    color:var(--boja);
+    font-weight: bold;
+}
+#kontakt-desno h3{
+    color: #fff;
+}
+.kontakt-forma button{
+    background-color: var(--boja);
+    width: 110px;
+    border:none;
+    outline: none;
+    color:#fff;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(31, 123, 104,0.3);
+
+}
+.kontakt-forma td{
+    padding-right: 15px;
+}
+.kontakt-forma iframe{
+    margin-top: 15px;
+}
+/*-------------galerija----------------------*/
+.grid-slike{
+    box-sizing: border-box;
+    padding: 20px;
+	gap:20px;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: 300px;
+	gap: 20px;
+}
+.grid-slike img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: grayscale(100%);
+    transition: all ease-in-out 150ms;
+}
+.grid-slike img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.05);
+
+}
+
+.kol2red2{
+    grid-column: span 2;
+    grid-row: span 2;
+}
